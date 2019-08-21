@@ -1,0 +1,139 @@
+Last login: Sun Aug 18 15:07:10 on ttys000
+(base) Alexs-MacBook-Pro:~ alexker$ cd Desktop/workspace/location-sentiment-hk-CityU/
+(base) Alexs-MacBook-Pro:location-sentiment-hk-CityU alexker$ python 5_regression.py 
+Regression analysis starts..... 
+First OLS Model:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              sentiment   R-squared:                       0.012
+Model:                            OLS   Adj. R-squared:                  0.004
+Method:                 Least Squares   F-statistic:                     1.490
+Date:                Sun, 18 Aug 2019   Prob (F-statistic):             0.0287
+Time:                        15:10:52   Log-Likelihood:                -6189.8
+No. Observations:                4611   AIC:                         1.246e+04
+Df Residuals:                    4573   BIC:                         1.270e+04
+Df Model:                          37                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                     1.9542      0.029     67.824      0.000       1.898       2.011
+C(bakery)[T.1]               -0.0918      0.128     -0.716      0.474      -0.343       0.159
+C(cafe)[T.1]                 -0.0202      0.101     -0.200      0.842      -0.219       0.178
+C(doctor)[T.1]                0.2216      0.157      1.412      0.158      -0.086       0.529
+C(hair_care)[T.1]            -0.2773      0.540     -0.514      0.607      -1.335       0.780
+C(hospital)[T.1]              0.1753      0.295      0.594      0.552      -0.403       0.754
+C(lodging)[T.1]               0.1629      0.201      0.812      0.417      -0.230       0.556
+C(meal_takeaway)[T.1]        -0.2042      0.355     -0.575      0.566      -0.901       0.492
+C(pharmacy)[T.1]              0.0609      0.192      0.317      0.752      -0.316       0.438
+C(supermarket)[T.1]           0.0527      0.153      0.344      0.731      -0.248       0.353
+C(school)[T.1]               -0.0355      0.104     -0.342      0.732      -0.239       0.168
+C(School)[T.1]                0.1883      0.330      0.571      0.568      -0.458       0.835
+C(atm)[T.1]                  -0.0268      0.162     -0.166      0.868      -0.343       0.290
+C(convenience_store)[T.1]    -0.0263      0.145     -0.182      0.856      -0.310       0.257
+C(dentist)[T.1]              -0.3261      0.241     -1.351      0.177      -0.799       0.147
+C(hardware_store)[T.1]        0.0497      0.143      0.348      0.728      -0.231       0.330
+C(home_goods_store)[T.1]     -0.0374      0.143     -0.261      0.794      -0.318       0.243
+C(insurance_agency)[T.1]     -0.2211      0.480     -0.460      0.645      -1.163       0.721
+C(beauty_salon)[T.1]          0.1512      0.231      0.653      0.514      -0.302       0.605
+C(clothing_store)[T.1]        0.1275      0.125      1.018      0.309      -0.118       0.373
+C(electronics_store)[T.1]    -0.4022      0.217     -1.858      0.063      -0.827       0.022
+C(jewelry_store)[T.1]        -0.2686      0.190     -1.412      0.158      -0.642       0.104
+C(liquor_store)[T.1]         -0.2276      0.165     -1.382      0.167      -0.550       0.095
+C(park)[T.1]                  0.0942      0.136      0.691      0.490      -0.173       0.361
+C(restaurant)[T.1]            0.0015      0.053      0.028      0.978      -0.102       0.105
+C(shopping_mall)[T.1]        -0.0684      0.103     -0.662      0.508      -0.271       0.134
+C(store)[T.1]                 0.0308      0.050      0.614      0.540      -0.068       0.129
+C(Store)[T.1]                -0.0168      0.184     -0.091      0.927      -0.377       0.344
+C(Playground)[T.1]            0.1842      0.147      1.253      0.210      -0.104       0.472
+C(transit_station)[T.1]       0.0149      0.113      0.131      0.896      -0.207       0.237
+C(route)[T.1]                -0.0234      0.035     -0.665      0.506      -0.092       0.046
+C(MTR)[T.1]                  -0.1065      0.180     -0.590      0.555      -0.460       0.247
+C(Tunnel)[T.1]               -0.0155      0.067     -0.232      0.816      -0.146       0.115
+C(Ferry)[T.1]                 0.0265      0.066      0.403      0.687      -0.103       0.156
+C(Bus)[T.1]                  -0.3116      0.269     -1.157      0.247      -0.840       0.217
+C(Airport)[T.1]               0.2321      0.177      1.310      0.190      -0.115       0.579
+C(working_day)[T.1]          -0.0351      0.032     -1.086      0.278      -0.098       0.028
+C(working_hours)[T.1]        -0.1552      0.035     -4.474      0.000      -0.223      -0.087
+==============================================================================
+Omnibus:                        0.173   Durbin-Watson:                   1.816
+Prob(Omnibus):                  0.917   Jarque-Bera (JB):              355.514
+Skew:                          -0.015   Prob(JB):                     6.33e-78
+Kurtosis:                       1.640   Cond. No.                         53.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Second OLS Model:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              sentiment   R-squared:                       0.007
+Model:                            OLS   Adj. R-squared:                  0.006
+Method:                 Least Squares   F-statistic:                     5.671
+Date:                Sun, 18 Aug 2019   Prob (F-statistic):           6.99e-06
+Time:                        15:10:52   Log-Likelihood:                -6200.4
+No. Observations:                4611   AIC:                         1.241e+04
+Df Residuals:                    4604   BIC:                         1.246e+04
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+Intercept                                1.9612      0.044     44.570      0.000       1.875       2.047
+C(education_training)[T.1]              -0.0262      0.096     -0.273      0.785      -0.214       0.162
+C(basic_necessities)[T.1]               -0.0175      0.044     -0.398      0.691      -0.104       0.069
+C(unpaid_activities)[T.1]               -0.0472      0.095     -0.499      0.618      -0.232       0.138
+C(free_time_leisure_activities)[T.1]    -0.0056      0.048     -0.116      0.907      -0.100       0.089
+C(working_day)[T.1]                     -0.0312      0.032     -0.972      0.331      -0.094       0.032
+C(working_hours)[T.1]                   -0.1605      0.035     -4.649      0.000      -0.228      -0.093
+==============================================================================
+Omnibus:                        0.117   Durbin-Watson:                   1.815
+Prob(Omnibus):                  0.943   Jarque-Bera (JB):              365.628
+Skew:                          -0.012   Prob(JB):                     4.03e-80
+Kurtosis:                       1.621   Cond. No.                         11.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Optimization terminated successfully.
+         Current function value: 1.181002
+         Iterations 7
+Multinominal Logisit Regression:
+                          MNLogit Regression Results                          
+==============================================================================
+Dep. Variable:              sentiment   No. Observations:                 4611
+Model:                        MNLogit   Df Residuals:                     4593
+Method:                           MLE   Df Model:                           15
+Date:                Sun, 18 Aug 2019   Pseudo R-squ.:               -0.004860
+Time:                        15:10:53   Log-Likelihood:                -5445.6
+converged:                       True   LL-Null:                       -5419.3
+Covariance Type:            nonrobust   LLR p-value:                     1.000
+================================================================================================
+                 sentiment=1       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+education_training               1.8935      0.526      3.603      0.000       0.863       2.924
+basic_necessities                1.8253      0.129     14.126      0.000       1.572       2.079
+unpaid_activities                1.8555      0.603      3.078      0.002       0.674       3.037
+free_time_leisure_activities     1.5572      0.166      9.398      0.000       1.232       1.882
+working_day                      1.5777      0.182      8.678      0.000       1.221       1.934
+working_hours                   -0.3167      0.232     -1.364      0.173      -0.772       0.138
+------------------------------------------------------------------------------------------------
+                 sentiment=2       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+education_training               1.1687      0.556      2.102      0.036       0.079       2.258
+basic_necessities                1.5439      0.133     11.638      0.000       1.284       1.804
+unpaid_activities                1.7857      0.611      2.924      0.003       0.589       2.983
+free_time_leisure_activities     1.2252      0.172      7.143      0.000       0.889       1.561
+working_day                      1.1303      0.187      6.050      0.000       0.764       1.497
+working_hours                   -0.4417      0.240     -1.844      0.065      -0.911       0.028
+------------------------------------------------------------------------------------------------
+                 sentiment=3       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+education_training               1.9533      0.527      3.708      0.000       0.921       2.986
+basic_necessities                1.8806      0.129     14.529      0.000       1.627       2.134
+unpaid_activities                1.7958      0.608      2.955      0.003       0.605       2.987
+free_time_leisure_activities     1.6891      0.166     10.199      0.000       1.365       2.014
+working_day                      1.4082      0.182      7.718      0.000       1.051       1.766
+working_hours                   -0.6819      0.235     -2.904      0.004      -1.142      -0.222
+================================================================================================
+(base) Alexs-MacBook-Pro:location-sentiment-hk-CityU alexker$ 
