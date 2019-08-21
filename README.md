@@ -1,6 +1,5 @@
 # location-sentiment-hk-CityU
 2019 Summer Internship Project
-More details and results coming soon...
 
 Happiness and urban routines: sentiment analysis of geo-located twitter data in hong kong’s city spaces and activities
 
